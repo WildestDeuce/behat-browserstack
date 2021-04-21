@@ -21,6 +21,13 @@ class FeatureContext extends BrowserStackContext {
     sleep(5);
   }
 
+
+      /*** @When /^I get click "([^"]*)"$/ */
+    public function iGetClick($arg1)
+    {
+        throw new PendingException();
+    }
+
   /** @Then /^I get title as "([^"]*)"$/ */
   public function iShouldGet($string) {
     $title = self::$driver->getTitle();
@@ -36,4 +43,10 @@ class FeatureContext extends BrowserStackContext {
       throw new Exception("Expected to see: '". $string. "'' Actual is: '". $source. "'");
     }
   }
+
+     /** * @Then /^the user should get a result with "([^"]*)"$/*/
+    public function theUserShouldGetAResultWith($arg1)
+    {
+        throw new PendingException();
+    }
 }
