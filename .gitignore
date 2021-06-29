@@ -3,3 +3,5 @@ composer.lock
 local.log
 vendor/
 bin/
+.venv*
+.vscode*
