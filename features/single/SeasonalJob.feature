@@ -7,3 +7,9 @@ Scenario: As a Veteran, I need to obtain information on how to transition out of
 
 
 
+Feature: "Construction Worker Looking for Project"
+
+Scenario: As construction worker, I am looking for my next construction project
+    Given I am on "https://seasonaljobs.dol.gov/"
+    When I click "Construction Laborers"
+    Then the suser should get a result with "Construction Laborers"
